@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>General Appointment Form</title>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#52639b 0%,#f8fafc 100%);padding:28px;display:flex;justify-content:center;align-items:center;min-height:100vh;">
+  <div style="background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(12,24,50,0.08);width:100%;max-width:600px;overflow:hidden;padding:28px;">
+    
+    <!-- Clinic Logo -->
+    <div style="text-align:center;margin-bottom:15px;">
+      <img src="https://via.placeholder.com/150x80?text=Clinic+Logo" alt="Clinic Logo" style="max-width:100%;border-radius:8px;">
+    </div>
+
+    <h2 style="text-align:center;margin-bottom:20px;color:#830909;">Book an Appointment</h2>
+    
+    <form>
+      <label>Full Name*<br>
+        <input type="text" required placeholder="Enter your full name" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Email*<br>
+        <input type="email" required placeholder="Enter your email address" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Phone*<br>
+        <input type="tel" pattern="[0-9]{10,15}" required placeholder="Enter your phone number" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Gender (Optional)</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <label>Age*<br>
+        <input type="number" min="1" max="120" required placeholder="Enter your age" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Service*<br>
+        <select required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+          <option value="">Select</option>
+          <option>General Consultation</option>
+          <option>Dental Checkup</option>
+          <option>Physiotherapy</option>
+          <option>Dietary Consultation</option>
+          <option>Psychological Couselling</option>
+          <option>Cardiology Consultation</option>
+          <option>Neurology Consultation</option>
+          <option>Speech Therapy</option>
+        </select>
+      </label><br><br>
+
+      <label>Date*<br>
+        <input type="date" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Time*<br>
+        <input type="time" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Notes<br>
+        <textarea style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;" placeholder="Additional details..."></textarea>
+      </label><br><br>
+
+      <!-- Terms & Conditions -->
+      <label style="display:flex;align-items:center;">
+        <input type="checkbox" required style="margin-right:8px;">
+        I agree to the <a href="#" style="color:#3974db;text-decoration:none;">Terms & Conditions</a>
+      </label><br><br>
+
+      <button type="submit" style="background:#3974db;color:rgb(54, 2, 2);padding:10px 16px;border:0;border-radius:8px;font-weight:600;cursor:pointer;width:100%;">Book Appointment</button>
+    </form>
+  </div>
+</body>
+</html>

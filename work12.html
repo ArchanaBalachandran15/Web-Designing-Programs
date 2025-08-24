@@ -1,0 +1,66 @@
+<!-- # To crate a Appointment Form 
+# 08/08/2025-Friday Work = 10 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Appointment Form</title>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#486ff0 0%,#e96cd4 100%);padding:28px;display:flex;justify-content:center;align-items:center;min-height:100vh;">
+  <div style="background:#e0b9b9;border-radius:16px;box-shadow:0 10px 30px rgba(0, 0, 0, 0.08);width:100%;max-width:600px;overflow:hidden;padding:28px;">
+    <h2 style="text-align:center;margin-bottom:20px;color:#141414;">Book an Appointment</h2>
+    
+    <form onsubmit="document.getElementById('successMsg').style.display='block'; this.reset(); return false;">
+      <label>Full Name*<br>
+        <input type="text" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Email*<br>
+        <input type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="you@example.com" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Phone*<br>
+        <input type="tel" pattern="^\d{10,15}$" required placeholder="Enter 10-15 digits" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Upload Picture*<br>
+        <input type="file" accept="image/*" style="width:100%;padding:6px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Service*<br>
+        <select required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+          <option value="">Select</option>
+          <option>General Consultation</option>
+          <option>Dental Checkup</option>
+          <option>Physiotherapy</option>
+          <option>Dietary Consultation</option>
+          <option>Speach Therapy</option>
+          <option>Pediatric Consultation</option>
+          <option>Cardiology Consultation</option>
+        </select>
+      </label><br><br>
+
+      <label>Date*<br>
+        <input type="date" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Time*<br>
+        <input type="time" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;">
+      </label><br><br>
+
+      <label>Notes<br>
+        <textarea style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;" placeholder="Additional details..."></textarea>
+      </label><br><br>
+
+      <button type="submit" style="background:#0b45b9;color:white;padding:10px 16px;border:0;border-radius:8px;font-weight:600;cursor:pointer;width:100%;">Book Appointment</button>
+    </form>
+
+    <!-- Success message -->
+    <p id="successMsg" style="display:none;text-align:center;color:green;font-weight:bold;margin-top:15px;">
+      ✅ Your appointment has been successfully booked!
+    </p>
+  </div>
+</body>
+</html>
