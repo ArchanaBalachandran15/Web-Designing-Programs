@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript One</title>
+</head>
+<body>
+    <button onclick="show()">ClickMe</button>
+    <script>
+        function show(){
+            bus()
+            console.log("button clicked")
+
+             // variable declaration in javascript in different variable name
+            var a=12;
+            var b=12;
+            var sum=a+b
+            console.log("Sum="+sum)
+
+             // variable declaration in javascript in same variable name
+            var c=4;
+            var c=6;
+            console.log("dispaly c"+c)
+            
+             // let function in javascript
+            let d = 7;
+            d = 8; 
+            console.log("d = " + d);
+            
+
+             // constant declaration in const declare 
+            const e=10
+            
+            // if condition in javascript
+            if (e % 2 == 0) {
+                console.log("Number is even");
+            } else {
+                console.log("Number is odd");
+            }
+
+             // for loop in javascript print 1-9 numbers
+            for(var i=0; i<10; i++){
+                console.log(i)
+            }
+
+            // arrary in javascript 
+            var arr=["kottayam","kochi","edapalli","vytilla",35]
+            console.log(arr) // print this arrary 
+            console.log(arr[2]) // print the second value
+
+            // object in javasccript
+            var person={
+                Name:"Robin",
+                Age:45,
+                Place:"Pala"
+            }
+            console.log(person)
+            console.log("Name:"+person.Name)
+
+            
+            // object  declare in arrary format in javasccript
+               var person=[{
+                Name:"Anil",
+                Age:43,
+                Place:"Theekoyi",
+               },{Name:'Robin',
+               Age:45,
+               Place:'Pala'
+            }]
+            console.log(person)
+            console.log("Name:"+person[0].Name)
+            
+        }
+
+        // another function program
+        function bus(){
+            console.log("Mariyam")
+        }
+
+        
+    </script>
+</body>
+</html>

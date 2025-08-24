@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corresponding Color</title>
+    <style>
+        #screen {
+            width: 300px;
+            height: 300px;
+            border: solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen"></div><br>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('yellow')">Yellow</button>
+    <button onclick="color('rose')">Rose</button>
+
+    <script>
+        function color(col) {
+            document.getElementById("screen").style.background = col;
+        }
+    </script>
+</body>
+</html>

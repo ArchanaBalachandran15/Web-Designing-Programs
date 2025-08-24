@@ -1,0 +1,51 @@
+h2 {
+    color: rgb(57, 8, 85);
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* There is no <p2> in HTML, use <p> instead */
+p {
+    color: #0a0a0a;
+    font-size: medium;
+    font-style: normal;
+}
+
+button {
+    background: rgb(11, 77, 40);
+    color: azure;
+}
+
+#para1 {
+    color: rgb(52, 10, 119);
+}
+
+#para2 {
+    font-size: 19px;
+}
+
+.content {
+    color: rgb(226, 19, 116);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.outer-box {
+    width: 400px;
+    height: 350px;
+    background: gray;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    padding-left: 30px;
+    padding-top: 18px;
+    border: 3px solid;
+}
+
+.inner-div {
+    margin: 5px;
+    background: rgb(78, 10, 156);
+    width: 350px;
+    height: 175px;
+    border: 6px solid;
+}
